@@ -19,16 +19,16 @@
 
     <body>
 
-        <form style="text-align: center;">
+        <form style="text-align: center;" onsubmit="return false;">
             
             <input class="titulo" type="text" placeholder="Ingrese el titulo" name="titulo"> <br>
             <textarea class = "cuerpo" type="text" name="cuerpo"> </textarea><br>
             
-            <button class="boton">Agregar espaciado</button>
+            <button class="boton" onclick="colocarEspaciado()">Agregar espaciado</button>
 
         </form>
 
-        <p id = "textoEspaciado"></p>
+        <p id = "textoEspaciado" > vista previa </p>
 
 
     </body>
