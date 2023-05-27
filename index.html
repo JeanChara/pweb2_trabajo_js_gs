@@ -4,6 +4,10 @@
         <title> Resolucion problema usando js y gs </title>
         <link rel = "stylesheet" href = "pub/estilos.css" >
         <script>
+            function subir(formObject){
+                console.log(formObject);
+                google.script.run.subir(formObject);
+            }
             function recitar() {
     const url = 'http://localhost:3000/recitar'
     fetch(url).then(
@@ -38,8 +42,13 @@
             <button class="boton" onclick="recitar()">Agregar espaciado</button>
 
         </form>
+        
+        <form id="formulario" style="text-align: center;" onsubmit="subir(this)">
+            <textarea class = "cuerpo" type="text" id="textoEspaciadox">vista previa</textarea><br>
+            
+            <button class="boton" onclick="subir(this)">Agregar espaciado</button>
 
-        <p id = "textoEspaciado" > vista previa </p>
+        </form>
 
 
     </body>
