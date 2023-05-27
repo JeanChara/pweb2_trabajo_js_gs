@@ -25,7 +25,7 @@ app.get('/recitar', (request, response) => {
                 return
             }
             response.json({
-                text: data.replace(/\n/g, '<br>')
+                text: data.replace(/./g, '\n')
             })
         })
     //
