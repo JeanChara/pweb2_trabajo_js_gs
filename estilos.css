@@ -1,0 +1,22 @@
+html{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+}
+body{
+    background: linear-gradient(rgb(48, 48, 48), black);
+    background-attachment: fixed;
+}
+.titulo{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    border: 3px solid  #DB7634;
+    border-radius: 10px;
+  }
+.cuerpo{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    border: 3px solid  #DB7634;
+    border-radius: 10px;
+}
