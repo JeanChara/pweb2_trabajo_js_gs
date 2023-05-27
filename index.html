@@ -2,8 +2,19 @@
 <html>
     <head>
         <title> Resolucion problema usando js y gs </title>
-        <link rel = "stylesheet" href = "estilos.css" >
-        <script src="myScript.js"></script>
+        <link rel = "stylesheet" href = "pub/estilos.css" >
+        <script>
+            function recitar() {
+    const url = 'http://localhost:3000/recitar'
+    fetch(url).then(
+        response => response.json()
+    ).then(
+        data => {
+            document.querySelector("#textoEspaciado").innerHTML = data.text
+        }
+    )
+}
+        </script>
 
         <div = style="text-align: center;">
             
@@ -24,7 +35,7 @@
             <input class="titulo" type="text" placeholder="Ingrese el titulo" name="titulo"> <br>
             <textarea class = "cuerpo" type="text" name="cuerpo"> </textarea><br>
             
-            <button class="boton">Agregar espaciado</button>
+            <button class="boton" onclick="recitar()">Agregar espaciado</button>
 
         </form>
 
